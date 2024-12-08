@@ -1,0 +1,99 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* background-image: linear-gradient(to right, #33006f, #3a0d74, #41187a, #48227f, #4f2b84); */
+    background-image: linear-gradient(to right top, #94db9b, #7fe184, #6ae569, #51e948, #31ed06);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    background-color: rgb(212, 208, 208, 0.4);
+    width: 600px;
+    aspect-ratio: 1;
+    text-align: center;
+    border: 2px solid #000;
+    backdrop-filter: blur(40px);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;;
+}
+
+#task{
+    padding: 15px 40px;
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+    width: 430px;
+}
+#btn{
+    padding: 15px 20px;
+    font-size: 1.1rem;
+    margin-left: -5px;
+    color:#fff;
+    background-color: #06d001;
+    transition: 0.3s all;
+    -webkit-transition: 0.3s all;
+    -moz-transition: 0.3s all;
+    -ms-transition: 0.3s all;
+    -o-transition: 0.3s all;
+
+    &:hover{
+        background-color: #059212;
+    }
+}
+
+h1{
+    font-family: Poppins , "sans serif";
+    /* font-size: 2.4rem; */
+    font-weight: 600;
+    margin: 1rem;
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+li{
+   font-size: 2rem;
+   list-style: none;
+   padding: 0px 0px 0px 10px;
+   border-radius: 10px;
+   background-color: #fff;
+   width: 500px;
+   margin-bottom: 2rem;
+   border: 0px solid black;
+   display: flex;/*Flexboxadded*/
+   justify-content: space-between;/*Spacebetweentasktextanddeletebutton*/
+   align-items: center; /*Center Vertically*/
+   -webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+   -ms-border-radius: 10px;
+   -o-border-radius: 10px;
+}
+
+.delete-btn{
+    font-size: 2rem;
+    padding: 5px 20px;
+    background-color: red;
+    color: white;
+    cursor:pointer;
+    transition:0.3s all;
+    -webkit-transition:0.3s all;
+    -moz-transition:0.3s all;
+    -ms-transition:0.3s all;
+    -o-transition:0.3s all;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+
+    &:hover{
+        background-color: rgb(175, 12, 12);
+    }
+}
